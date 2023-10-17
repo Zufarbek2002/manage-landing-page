@@ -1,0 +1,87 @@
+#careers {
+    margin: 146px 0 180px;
+
+    .careers__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .careers__title {
+        color: $mainColor;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: -0.714px;
+    }
+
+    .careers__boxes {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        row-gap: 60px;
+        flex-wrap: wrap;
+        margin: 100px 0 48px;
+    }
+
+    .careers__box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 45%;
+        padding: 60px 40px 40px 40px;
+        background-color: #FAFAFA;
+    }
+
+    .careers__box_title {
+        color: $mainColor;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.286px;
+        margin-bottom: 19px;
+    }
+
+    .careers__text {
+        color: $mainColor;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        opacity: 0.5025;
+    }
+
+    .careers__img {
+        position: absolute;
+        top: -36px;
+    }
+
+    .careers__btn{
+        @include btn;
+    }
+
+    @media screen and (max-width: 1073px) {
+        .careers__box {
+            padding: 40px 20px 20px 20px;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .careers__box {
+            max-width: 540px;
+            width: 100%;
+            padding: 60px 40px 40px 40px;
+        }
+    }
+
+    @media screen and (max-width: 493px) {
+        .careers__box {
+            padding: 40px 20px 20px 20px;
+        }
+
+        .careers__title{
+            font-size: 32px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+#about {
+
+    .about__container {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .about__title {
+        max-width: 445px;
+        color: $mainColor;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: -0.714px;
+        max-width: 445px;
+    }
+
+    .about__text {
+        max-width: 350px;
+        margin-top: 24px;
+    }
+
+    .about__heading{
+        display: flex;
+        flex-direction: column;
+        row-gap: 46px;
+    }
+
+    .about__heading_box {
+        max-width: 540px;
+        width: 100%;
+
+        &:nth-child(2) .about__heading_title::before{
+            content: "02";
+        }
+        &:nth-child(3) .about__heading_title::before{
+            content: "03";
+        }
+    }
+
+    .about__heading_title {
+        color: $mainColor;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.286px;
+        display: flex;
+        gap: 28px;
+        align-items: center;
+
+        &::before {
+            content: "01";
+            background-color: $btnColor;
+            padding: 6px 23px;
+            border-radius: 39px;
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: -0.286px;
+        }
+    }
+
+    .about__desc {
+        width: 100%;
+        margin-top: 19px;
+        padding-left: 95px;
+    }
+
+    @media screen and (max-width: 940px) {
+        .about__container{
+            flex-direction: column;
+        }
+
+        .about__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .about__title{
+            max-width: 100%;
+        }
+
+        .about__text{
+            max-width: 75%;
+        }
+
+        .about__heading_box{
+            max-width: 100%;
+        }
+
+        .about__heading_title{
+            gap: 15px;
+            background-color: #FFF0EC;
+            border-radius: 19.5px;
+        }
+
+        .about__desc{
+            padding-left: 0;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .about__title{
+            font-size: 30px;
+        }
+
+        .about__text{
+            max-width: 100%;
+            font-size: 14px;
+        }
+    }
+}

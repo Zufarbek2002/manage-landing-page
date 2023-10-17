@@ -1,0 +1,42 @@
+#community {
+    background-color: $btnColor;
+
+    .community__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 62px 0;
+    }
+
+    .community__title {
+        color: #FFF;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: -0.714px;
+        max-width: 455px;
+    }
+
+    .community__btn {
+        @include btn;
+        background-color: #fff;
+        color: $btnColor;
+        flex-shrink: 0;
+
+        &:hover {
+            background-color: #fff;
+            color: #f3613c72;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        .community__container{
+            flex-direction: column;
+            row-gap: 29px;
+        }
+        .community__title{
+            text-align: center;
+        }
+    }
+}
